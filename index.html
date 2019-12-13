@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>区块链开发-以太坊代币发行-数字货币开发平台-【赛思特】 </title>
+  <meta name="description" content="区块链开发，代币发行，数字货币开发，区块链数字货币开发，自主注册，傻瓜式3分钟一键发行数字代币，一键发行区块链数字货币，ERC20代币发行，简单易上手，区块链系统定制，我们以进入区块链成本降低，让区块链价值得到体现，真正为客户带来有价值的服务。">
+  <meta name="keywords" content="代币发行,区块链开发,数字货币开发,区块链数字货币开发,发行数字代币,数字货币,赛思特">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="../sist/css/style.css" /> -->
+  <link rel="stylesheet" href="css/head.css"/>
+  <link rel="stylesheet" href="css/qk_lindex.css" />
+
+  <link rel="apple-touch-icon" sizes="76x76" href="home/assets/img/logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="home/assets/img/favicon.ico">
+  <script type="text/javascript" src="js/jquery.min.js" ></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+  <!-- <script type="text/javascript" src="../sist/js/modernizr-2.8.3.min.js" ></script> -->
+    <script type="text/javascript">
+      $(function(){
+        $('#myCarousel').carousel({interval:2000});
+          $('.jiaoYiSister_con .col-sm-3').mouseover(function(){
+            $(this).siblings().removeClass('active');
+           $(this).addClass('active');
+        });
+        var linkSiSterOff=true;
+        var aaOF={
+          linkSiSter:false,
+          jinRongSiSter:false,
+        };
+        $(document).scroll(function(){
+          var scroH = $(document).scrollTop();  //滚动高度
+          var viewH = $(window).height();  //可见高度 
+          var contentH = $(document).height();  //内容高度
+
+          var linkSiSter=$('#linkSiSter');
+          var jinRongSiSter=$('#jinRongSiSter');
+
+          function gunDong(box){
+          var boxs=$('#'+box);
+          var top_box=boxs.offset().top;
+              if(top_box-scroH<(viewH/2)&&!aaOF[box]){
+                console.log('滚动到连上系统了'+box)
+                var n=0;
+                boxs.find('.product_list').each(function(index,aa){
+                    var that= $(this);
+                    if(index==n){
+                      setTimeout(function(){
+                        that.css('margin-top','0px')
+                      },200+n*200)
+                      n++;
+                    }
+                });            
+                aaOF[box]=true;
+              }
+          }
+          gunDong('linkSiSter');
+          gunDong('jinRongSiSter');
+          gunDong('showAnLi');
+          gunDong('qiYeYouShi');
+          
+          
+        })
+      })
+
+      // function stop() {
+      //     return false;
+      // }
+      // document.oncontextmenu = stop;
+    </script>  
+    <style>
+      .item{
+        width: 100%;
+        /* height: 561px; */
+      }
+      .item img{
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    </style>
+</head>
+<body>
+  <!--site-header -->
+    <header id="siteHeader" class="site-header site-header-fixed-top">
+        <nav id="siteNavbar" class="navbar navbar-default navbar-fixed-top site-navbar-from-light-fg">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle-icon navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="">☰</span>
+              </button> 
+              <a class="navbar-brand" href="{:url('index/index/index')}">
+                <h1> <img src="img/logo.png"  alt="代币发行,区块链开发,数字货币开发"></h1>
+              </a>
+            </div><!-- .navbar-header -->   
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a data-smooth-scroll="true" href="#home">首页</a></li>
+                <li><a data-smooth-scroll="true" href="#feature1">公司简介</a></li>
+                <li><a href="qkl.html">区块链交易所开发</a></li>
+                <!-- <li><a href="{:url('/help')}">帮助文档</a></li> -->
+                <li><a data-smooth-scroll="true" href="#contact">区块链钱包开发</a></li>
+                <li><a data-smooth-scroll="true" href="#contact">链上应用</a></li>
+                <li><a data-smooth-scroll="true" href="#contact">联系我们</a></li>
+              </ul>
+            </div> <!-- .navbar-collapse -->
+          </div>
+        </nav>
+    </header>
+    <div class="content" >
+        <!-- banner --> 
+      <div id="myCarousel" class=" banner carousel slide">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="img/index_banner1.png" width="10%"><img class="app_ban" src="img/phone_baner1.png" width="10%"></div>
+                <div class="swiper-slide"> <img src="img/index_banner2.jpg" width="10%"><img class="app_ban" src="img/phone_baner2.png" width="10%"></div>
+                <div class="swiper-slide"> <img src="img/index_banner3.jpg" width="10%"><img class="app_ban" src="img/phone_baner3.png" width="10%"></div>
+              </div>
+             
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+          </div>
+         
+      </div>
+     
+      <div class="bannerNext">
+         <div class="container">
+           <div class="row">
+              <div class="col-sm-3 text-center">
+                <img class="" src="img/10.png" alt="">
+                <p> 多年金融领域行业技术沉淀</p>
+              </div>        
+              <div class="col-sm-3 text-center">
+                <img src="img/30.png" alt="">
+                <p>多项软件著作权国家级高新技术企业</p>
+              </div>           
+              <div class="col-sm-3 text-center">
+                <img src="img/100.png" alt="">
+                <p> 专业开发技术团队</p>
+              </div>
+             <div class="col-sm-3 text-center">
+              <img src="img/1000.png" alt="">
+              <p>服务全球客户</p>
+             </div>
+           </div>
+         </div>
+      </div>  
+      <!-------交易系统----->
+      <div class="jiaoYiSister">
+        <div class="con_title text-center">
+          <p><span>数字资产交易系统</span><img src="img/titlebj.png" alt=""></p>
+          <h6>专业数字资产交易软件服务商</h6>
+        </div>
+        <div class="jiaoYiSister_con ">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3 text-center">
+                    <div class="product_list">
+                      <img src="img/list1.png" alt="">
+                      <h2>币币交易系统</h2>
+                      <p class="overMore">主链币种，自研币种实现完美对接
+                        全面支持多币对行情交易</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="product_list">
+                        <img src="img/list2.png" alt="">
+                        <h2>场外OTC交易系统</h2>
+                        <p class="overMore">场外交易支持多支持方式
+                          打造场外用户数字货币交易新方式
+                        </p>
+                      </div>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="product_list">
+                        <img src="img/list3.png" alt="">
+                        <h2>杠杠交易系统</h2>
+                        <p class="overMore">精准风控，安全可靠
+                          最高支持10倍高杠杆交易</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                      <div class="product_list">
+                        <img src="img/list4.png" alt="">
+                        <h2>行情机器人系统</h2>
+                        <p class="overMore">
+                          智能机器人交易策略
+提供真实交易买卖深度和K线图，降低交易风险
+                        </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </div>  
+      </div>
+      <!-------链上应用----->
+      <div id="linkSiSter" class="linkSiSter">
+        <div class="con_title text-center">
+            <p><span>链上应用</span><img src="img/titlebj.png" alt=""></p>
+            <h6>场景化应用打造，提供安全，可靠，稳定的一站式全链服务</h6>
+        </div>
+        <div class="linkSiSter_con ">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-sm-3 text-center">
+                <div class="product_list">
+                  <img src="img/icon1.png" alt="">
+                    <h2>企业私链搭建</h2>
+                    <p class="overMore">
+                        依据去中心化的机制，搭建私有链主链
+                        安全高效的系统特性，定制开发智能合约
+                        强化自定义规则的功能，满足企业需求
+                        引进鉴权、加密、签名机制等技术
+                    </p>
+                </div>
+              </div>
+              <div class="col-sm-3 text-center">
+                <div class="product_list">
+                    <img src="img/icon2.png" alt="">
+                    <h2>供应链金融</h2>
+                    <p class="overMore">
+                        分布式存储，数据交易公开透明
+                        点对点特性，极大提高交易效率
+                        打造联盟链，多方签名不可篡改
+                        债权转让多方共识，降低操作难度
+                    </p>
+                </div>
+              </div>
+              <div class="col-sm-3 text-center">
+                  <div class="product_list">
+                      <img src="img/icon3.png" alt="">
+                      <h2>DApp定制开发</h2>
+                      <p class="overMore">
+                          基于区块链的可信计算平台技术
+                          打造数据鉴权和价值网络属性
+                          可以让数字应用及数字内容资产化
+                          全面构建新型价值应用体系
+                      </p>
+                  </div>
+              </div>
+              <div class="col-sm-3 text-center">
+                  <div class="product_list">
+                      <img src="img/icon4.png" alt="">
+                      <h2>社会管理</h2>
+                      <p class="overMore">
+                          投票、身份认证、信用等广泛运用
+                          利用区块链进行公证存储、公示
+                          对系统进行精简去除低效环节
+                          提高社会管理系统的透明性
+                      </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------金融系统----->
+      <div id="jinRongSiSter" class="jinRongSiSter">
+        <div class="con_title text-center">
+            <p><span>互联网金融系统</span><img src="img/titlebj.png" alt=""></p>
+            <h6>专业互联网软件开发商，为您提供全方位金融解决方案</h6>
+        </div>
+        <div class="jinRongSiSter_con container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product_list">
+                <div class="left_con"></div>
+                <div class="right_con">
+                    <h2>互联网金融系统</h2>
+                    <p class="overMore">
+                      通过整合互  联网金融
+                        等业务系统，充分满
+                        足客户消费贷款审批、
+                        资金募集等多元化需求
+                    </p>
+                </div>                 
+              </div>
+            </div>
+            <div class="col-sm-6"> 
+              <div class="product_list">
+                  <div class="left_con"></div>
+                  <div class="right_con">
+                      <h2>供应链金融系统</h2>
+                      <p class="overMore">
+                          通过核心企业管理，以
+                          供应链为出发点，为供
+                          应链整体提供一站式金
+                          融解决方案
+                      </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------企业优势----->
+      <div id="qiYeYouShi" class="qiYeYouShi">
+        <div class="xiao_title text-center">
+          <h2>企业优势</h2>
+          <p>创新驱动 行业领先 五年自主研发技术积累打造超一流品质</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product_list">
+                <img src="img/icons_1.png" alt="">
+                <div class="text">
+                  <dl>
+                    <dt>产品优势</dt>
+                    <dd>弥补市场空白</dd>
+                    <dd>精准对接市场需求</dd>                
+                    <dd>突破核心痛点</dd>              
+                    <dd>差异化优势明显</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="product_list">
+                    <img src="img/icons_2.png" alt="">
+                    <div class="text">
+                      <dl>
+                        <dt>技术优势</dt>
+                        <dd>专属节点服务</dd>
+                        <dd>冷热钱包、私钥分离</dd>                
+                        <dd>硬件加密安全</dd>              
+                        <dd>强行衍生、多重安全</dd>
+                      </dl>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="product_list">
+                      <img src="img/icons_3.png" alt="">
+                      <div class="text">
+                        <dl>
+                          <dt>项目优势</dt>
+                          <dd>平台搭建部署全程指导</dd>
+                          <dd>安全支付综合解决方案</dd>                
+                          <dd>售后团队提供优质服务</dd>              
+                          <dd>全球众多客户共同选择</dd>
+                        </dl>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="product_list">
+                      <img src="img/icons_4.png" alt="">
+                      <div class="text">
+                        <dl>
+                          <dt>公司优势</dt>
+                          <dd>五年区块链技术沉淀</dd>
+                          <dd>百人专业开发团队</dd>                
+                          <dd>国家级高新技术企业</dd>              
+                          <dd>20多项软件著作权证书</dd>
+                        </dl>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        <!-------案例展示----->
+        <div id='showAnLi' class="showAnLi">
+          <div class="anliTitle text-center">
+            案例展示
+          </div>
+          <div style="overflow: hidden;" class="container">
+              <div class="swiper-containers">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/phone1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/phone2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/phone3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/phone4.png" alt=""></div>
+                     <div class="swiper-slide"><img src="img/phone3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/phone4.png" alt=""></div>
+                  
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+              </div>
+              <!-- <div class="row">
+                  <div class="col-sm-3">
+                      <div class="product_list">
+                        <img src="img/phone1.png" alt="">
+                        <p>数字资产挖矿</p>
+                      </div>
+                    </div>
+                  
+                  <div class="col-sm-3">
+                    <div class="product_list">
+                      <img src="img/phone2.png" alt="">
+                      <p>数字资产挖矿</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="product_list">
+                      <img src="img/phone3.png" alt="">
+                      <p>数字资产挖矿</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="product_list">
+                      <img src="img/phone4.png" alt="">
+                      <p>数字资产挖矿</p>
+                    </div>
+                  </div>
+              </div> -->
+          </div>
+       
+        </div>
+        <!-------全球案例-----> 
+        <div class="quanQiu">
+          <div class="xiao_title text-center">
+              <h2>企业优势</h2>
+              <p>创新驱动 行业领先 五年自主研发技术积累打造超一流品质</p>
+          </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div id="article" class="site-footer-top-section">
+          <div class="container">
+            <div class="site-footer-top-row row">
+              <div class="site-footer-top-col col-sm-8 col-sm-offset-2">
+            <p class="section-title"><h2><font color="#FFFFFF">区块链开发资讯</font></h2></p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #siteFooterTop -->
+      <div class="site-footer-bottom-section">
+        <div class="container">
+          {volist name="lists" id="vo"}
+          <p><a href="{:url('/qukuailiankaifa',array('id'=>$vo['id']))}" style="color:#fff;">{$vo.title}</a></p>
+          {/volist}
+        </div> <!-- #siteFooterBottom -->
+        </div> <!-- #siteFooterBottom -->
+       <!--
+       <div id="siteFooterBottom" class="site-footer-bottom-section">
+          <div class="container">
+            <div class="site-footer-bottom-border"></div>
+            <div class="row">
+              <div class="site-footer-bottom-left-col col-md-12">
+                <div class="site-footer-brand">
+                  <span style="font-size:16px;">友情链接</span>
+                </div>
+    
+                <div class="site-footer-bottom-info">
+                  <ul>
+                    <!-- <li><a href="http://zzsist.com">官网</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  <!-- #siteFooterBottom -->
+       
+        <div id="siteFooterBottom" class="site-footer-bottom-section">
+          <div class="container">
+            <div class="site-footer-bottom-border"></div>
+            <div class="row">
+              <div class="site-footer-bottom-left-col col-md-6">
+                <div class="site-footer-brand">
+                  <a href="#">Sist</a> <span>旗下产品</span>
+                </div>
+    
+                <div class="site-footer-bottom-info">
+                  <ul>
+                    <li><a href="{:url('index/index/help')}" >用户协议</a></li>
+                    <li><a href="{:url('index/index/help')}" >隐私政策</a></li>
+                    <li><a href="/sitemap.xml" >xml地图</a></li>
+                    <li><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274552488'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274552488%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></li>
+                    <li style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278108372'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278108372' type='text/javascript'%3E%3C/script%3E"));</script></li>
+           </ul>
+                </div>
+              </div>
+    
+              <div class="site-footer-bottom-right-col col-md-6">
+                <div class="site-footer-bottom-copyright">推荐服务：区块链开发 代币发行 数字货币开发 DAPP开发</div>
+          <div class="site-footer-bottom-copyright">Copyright © 2018 Sist. All Rights Reserved.</div>
+               
+              </div>
+            </div>
+          </div>
+        </div> <!-- #siteFooterBottom -->
+      </footer>     
+
+      <script src="js/swiper.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+
+      var viewH = window.screen.width;  //可见高度 
+      var num=4;
+      if(viewH<1024&&viewH>768){
+        num=3
+      }else if(viewH<768&&viewH>468){
+        num=2
+      }else if(viewH<=468){
+        num=2
+      }
+      var swiper = new Swiper('.swiper-containers', {
+        slidesPerView:num,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      </script>
+</body>
+  <script type="text/javascript" src="js/qkl.js" ></script>
+
+</html>
